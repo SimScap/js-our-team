@@ -45,7 +45,7 @@ for (let i = 0; i < team.length; i++) {
 
     newImg.src= "img/"+team[i].image;
     cardContainer.append(newDiv);
-    cardContainer.appendChild(newImg);
+    newDiv.appendChild(newImg);
     console.log(newImg);
 }
 
