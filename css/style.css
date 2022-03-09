@@ -1,0 +1,14 @@
+.container{
+    border: 2px solid blueviolet;
+}
+.cards{
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    border: 1px solid blue;
+}
+
+
+#card-container{
+    border: 2px solid gold;
+    height: 600px;
+}
