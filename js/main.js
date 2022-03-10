@@ -31,6 +31,9 @@ const team = [
     },
 ];
 
+
+
+
 console.log(team);
 
 const cardContainer = document.getElementById('card-container')
@@ -38,17 +41,19 @@ const cardContainer = document.getElementById('card-container')
 
 for (let i = 0; i < team.length; i++) {
     let newDiv = document.createElement('div');
-    newDiv.classList.add('cards'); 
+    newDiv.classList.add('card'); 
     let newImg = document.createElement('img');
+    newImg.classList.add('img-fluid');
+    
 
-    // <img></img> => <img src="barbara-ramos-graphic.jpg"></img>
+
 
     newImg.src= "img/"+team[i].image;
     cardContainer.append(newDiv);
     newDiv.appendChild(newImg);
     console.log(newImg);
 }
-
+// <img></img> => <img src="barbara-ramos-graphic.jpg"></img>
 /**
  * Viene fornito un array di oggetti in allegato in cui è definito un array di oggetti che rappresentano i membri del team.
 Ogni membro ha le informazioni necessarie per stampare le relative informazioni: Nome, Ruolo e Foto.
